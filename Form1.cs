@@ -130,6 +130,9 @@ namespace Tiger_OpenGL_Lib_Installer
             if (glmb) {
                 copy3dirs(glm);
             }
+
+
+            MessageBox.Show("Libraries Installed", "Tiger Installer");
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
