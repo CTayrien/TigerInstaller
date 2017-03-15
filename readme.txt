@@ -1,3 +1,5 @@
+Current Version: https://github.com/CTayrien/TigerInstaller
+
 Tiger OpenGL External Library Installer: free open-source library installer for game engine development in C++ & OpenGL
 
 For use with 32-bit (x86) OpenGL projects in Visual Studio 2015
