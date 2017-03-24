@@ -56,6 +56,7 @@
             this.label18 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -118,7 +119,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(356, 431);
+            this.button1.Location = new System.Drawing.Point(356, 455);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 4;
@@ -153,15 +154,15 @@
             this.label1.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(19, 370);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(391, 13);
+            this.label1.Size = new System.Drawing.Size(403, 13);
             this.label1.TabIndex = 7;
-            this.label1.Text = "Example: C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\VC\\";
+            this.label1.Text = "Example 1: C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\VC\\";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(20, 389);
+            this.label2.Location = new System.Drawing.Point(20, 416);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(361, 13);
             this.label2.TabIndex = 8;
@@ -320,7 +321,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(20, 406);
+            this.label18.Location = new System.Drawing.Point(20, 433);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(403, 13);
             this.label18.TabIndex = 24;
@@ -350,11 +351,22 @@
             this.textBox2.TabIndex = 26;
             this.textBox2.Text = "Tiger\r\nOpenGL External Library\r\nInstaller";
             // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(19, 387);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(421, 13);
+            this.label19.TabIndex = 27;
+            this.label19.Text = "Example 2: Z:\\profile\\documents\\visual studio 2015\\Projects\\MyEngine\\";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(457, 478);
+            this.ClientSize = new System.Drawing.Size(457, 504);
+            this.Controls.Add(this.label19);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label18);
@@ -419,6 +431,7 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label19;
     }
 }
 

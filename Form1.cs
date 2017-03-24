@@ -104,35 +104,44 @@ namespace Tiger_OpenGL_Lib_Installer
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(!Directory.Exists(installpath + include))
-                Directory.CreateDirectory(installpath + include);
+            button1.Enabled = false;
+            try
+            {
+                if (!Directory.Exists(installpath + include))
+                    Directory.CreateDirectory(installpath + include);
 
-            if (!Directory.Exists(installpath + lib))
-                Directory.CreateDirectory(installpath + lib);
+                if (!Directory.Exists(installpath + lib))
+                    Directory.CreateDirectory(installpath + lib);
 
-            if (!Directory.Exists(installpath + bin))
-                Directory.CreateDirectory(installpath + bin);
+                if (!Directory.Exists(installpath + bin))
+                    Directory.CreateDirectory(installpath + bin);
 
+                // Install
+                if (GLEWb)
+                {
+                    copy3dirs(GLEW);
+                }
 
-            // Install
-            if (GLEWb) {
-                copy3dirs(GLEW);
+                if (GLFWb)
+                {
+                    copy3dirs(GLFW);
+                }
+
+                if (FreeImageb)
+                {
+                    copy3dirs(FreeImage);
+                }
+
+                if (glmb)
+                {
+                    copy3dirs(glm);
+                }
+
+                MessageBox.Show("Libraries Installed", "Tiger Installer");
+            } catch (Exception ex) {
+                MessageBox.Show(ex.Message, "Exception Caught");
             }
-
-            if (GLFWb) {
-                copy3dirs(GLFW);
-            }
-
-            if (FreeImageb) {
-                copy3dirs(FreeImage);
-            }
-
-            if (glmb) {
-                copy3dirs(glm);
-            }
-
-
-            MessageBox.Show("Libraries Installed", "Tiger Installer");
+            button1.Enabled = true;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
